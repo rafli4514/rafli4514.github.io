@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background: gray;
+    text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+.box {
+  background: linear-gradient(#833ab4, #fcb045);  
+  
+  color: white;
+  padding: 6rem 1rem;
+  margin: 4rem;
+  font-size: 100px;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #06655d;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 75px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header class="box">
+  <h2>DIGITAL CV</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">London</a></li>
+      <li><a href="#">Paris</a></li>
+      <li><a href="#">Tokyo</a></li>
+    </ul>
+  </nav>
+ <a href="index.html">about</a>
+  <article>
+    <form>
+        <label for="<Email">Email:</label>
+        <input type="text" id="nama" aria-placeholder="masukkan nama"><br><br>
+        <label for="password">kata sandi</label>
+        <input type="password" id=""><br><br>
+        <button type="Masuk">Masuk</button>
+        <input type="checkbox">
+        <label for="<checkbox">Remember me </label><br><br>
+
+        <label for="kelas">kelas</label>
+            <select name="kelas" id="kelas">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+            </select>
+            <textarea name="pesan" id="" cols="10" rows="3"></textarea>
+        <button type="button" onclick="alert    ('hello world!')">alert</button>
+
+    </form>
+</section>
+
+<footer class="box">
+  <p>ABOUT</p>
+</footer>
+
+</body>
+</html>
+
